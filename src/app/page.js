@@ -131,7 +131,7 @@ export default function Dashboard() {
               <input
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
-                className="w-full border border-[#cfc9ba] rounded-md px-3 py-2 bg-[#f7f5f0]"
+                className="w-full border border-[#cfc9ba] rounded-md px-3 py-2 bg-[#f7f5f0] text-[#22262b]"
                 placeholder="e.g. Roger"
               />
             </div>
@@ -144,7 +144,7 @@ export default function Dashboard() {
                 onChange={(e) =>
                   setForm({ ...form, position: e.target.value })
                 }
-                className="w-full border border-[#cfc9ba] rounded-md px-3 py-2 bg-[#f7f5f0]"
+                className="w-full border border-[#cfc9ba] rounded-md px-3 py-2 bg-[#f7f5f0] text-[#22262b]"
                 placeholder="e.g. Field Application Engineer"
               />
             </div>
@@ -155,7 +155,7 @@ export default function Dashboard() {
               <select
                 value={form.track}
                 onChange={(e) => setForm({ ...form, track: e.target.value })}
-                className="w-full border border-[#cfc9ba] rounded-md px-3 py-2 bg-[#f7f5f0]"
+                className="w-full border border-[#cfc9ba] rounded-md px-3 py-2 bg-[#f7f5f0] text-[#22262b]"
               >
                 <option value="Employment">Employment</option>
                 <option value="Internship">Internship</option>
@@ -168,7 +168,7 @@ export default function Dashboard() {
               <select
                 value={form.stage}
                 onChange={(e) => setForm({ ...form, stage: e.target.value })}
-                className="w-full border border-[#cfc9ba] rounded-md px-3 py-2 bg-[#f7f5f0]"
+                className="w-full border border-[#cfc9ba] rounded-md px-3 py-2 bg-[#f7f5f0] text-[#22262b]"
               >
                 {ALL_STAGES.map((s) => (
                   <option key={s} value={s}>
@@ -227,7 +227,7 @@ export default function Dashboard() {
                     <select
                       value={c.stage}
                       onChange={(e) => handleStageChange(c.id, e.target.value)}
-                      className="text-sm border border-[#cfc9ba] rounded-md px-2 py-1 bg-[#f7f5f0]"
+                      className="text-sm border border-[#cfc9ba] rounded-md px-2 py-1 bg-[#f7f5f0] text-[#22262b]"
                     >
                       {ALL_STAGES.map((s) => (
                         <option key={s} value={s}>
