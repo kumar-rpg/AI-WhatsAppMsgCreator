@@ -4,6 +4,15 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { STAGES, ALL_STAGES, buildMessage } from "@/lib/messageBuilder";
 
+function formatDate(iso) {
+  if (!iso) return "—";
+  return new Date(iso).toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  });
+}
+
 const STAGE_COLORS = {
   Applied: "bg-[#e4e0d6] text-[#5b6472]",
   Screening: "bg-[#e4e0d6] text-[#5b6472]",
@@ -216,6 +225,10 @@ export default function Dashboard() {
                     <p className="font-bold text-[#10233f]">{c.name}</p>
                     <p className="text-sm text-[#5b6472]">
                       {c.position} · {c.track}
+                    </p>
+                    <p className="text-xs text-[#8b93a0] mt-0.5">
+                      Applied {formatDate(c.created_at)} · Stage updated{" "}
+                      {formatDate(c.updated_at)}
                     </p>
                   </div>
                   <div className="flex items-center gap-2">
