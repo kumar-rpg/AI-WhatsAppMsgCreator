@@ -5,7 +5,7 @@ const TIMELINE = {
   Applied: "You can expect an update on your initial review within 3–5 working days.",
   Screening: "You can expect a screening outcome within 3–5 working days.",
   Interview: "You can expect an interview outcome within 5–7 working days.",
-  Offer: "Please note this offer requires a response within 3 working days.",
+  Offer: "Please note this offer requires a response within 2–3 working days.",
   Hired: "Onboarding details, including your first-day schedule, will be sent within 2 working days.",
   Rejected: "This decision is final for this application.",
 };

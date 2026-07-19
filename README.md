@@ -62,7 +62,7 @@ password screen first. Enter whatever you set as `APP_PASSWORD`.
 | Applied   | Initial review within 3–5 working days           |
 | Screening | Screening outcome within 3–5 working days        |
 | Interview | Interview outcome within 5–7 working days        |
-| Offer     | Offer response requested within 3 working days   |
+| Offer     | Offer response requested within 2–3 working days  |
 | Hired     | Onboarding details sent within 2 working days    |
 | Rejected  | Notified immediately, no further timeline needed |
 
