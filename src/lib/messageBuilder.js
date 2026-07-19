@@ -38,7 +38,7 @@ export function buildMessage({ name, position, track, stage }) {
     stage === "Rejected"
       ? "We encourage you to apply again for future opportunities that match your experience."
       : `You're currently at the ${stage} stage. ${TIMELINE[stage]}`;
-  const signOff = `${CONTACT}\n\nWarm regards,\nKumar\nHR & IT, Cortex Robotics`;
+  const signOff = `${CONTACT}\n\nWarm Regards,\n\nHuman Resources Dept\nCORTEX ROBOTICS`;
 
   return `${greeting}\n\n${opening}\n\n${timeline}\n\n${signOff}`;
 }
